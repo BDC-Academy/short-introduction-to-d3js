@@ -218,8 +218,8 @@ function positioningAndSizingUsingScales() {
  * After that we can use setter functions on the axis to configure and tweak it visually.
  */
 function appendingAxis(scales) {
-  // Note: we need our scales to generate axis with D3
-  const { yScale, xScale } = scales;
+  // Note: we need our scales to generate axis with D3, uncomment the following code
+  // const { yScale, xScale } = scales;
 
   // TODO 4.1: Create a g element that functions as a container for an axis
   // Before we generate an axis we need a place to put it in the DOM, a container group element.
@@ -274,9 +274,9 @@ function appendingAxis(scales) {
  * which we will use to generate a dataset for the gridlines.
  */
 function appendingValuesAndGridLines(scales) {
-  // Note: we need our scales to calculate position
-  const { yScale, xScale } = scales;
-  const svg = d3.select('#d3-chart');
+  // Note: we need our scales to calculate position, uncomment the following code
+  // const { yScale, xScale } = scales;
+  // const svg = d3.select('#d3-chart');
 
   // TODO 5.1: Create horizontal grid lines using the array of ticks the yScale generates
   // To create our tick lines we use multiple line elements just like we did at the svg only chart.
